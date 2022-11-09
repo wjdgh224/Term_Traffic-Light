@@ -1,12 +1,12 @@
 # 신호등
-
+- 2019년 2학기 논리회로실험 텀프로젝트
 # 목표
 (1) NS 도로가 교통 흐름이 많은 주도로이므로 EW방향 차량이 없을 때는 녹색신호등은 항상 ON이 되어야 한다.
 
 (2) EW도로의 양쪽 어디에서든지 차량이 들어오면 그때는 신호가 바뀐다. 그리고 NS도로나 EW도로에 차량이 있으면 신호가 계속 바뀌어야 한다. NS 녹색 신호등은 7초 동안 진행되며, 2초간 황색 신호를 준 후 적색 신호로 바뀐다. EW 녹색 신호등은 4초 동안 지속된 후 2초간 황색 신호를 준 후 적색으로 바뀐다. 이것은 NS와 EW방향 모두에 차량이 있을 경우이다.
 
+<hr>
 # 1. 신호 변경
-
 <table>
   <tr>
     <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200814293-4da81231-4513-4591-a918-fe1c6d9d6d25.png" width="800" height="400" align='center'></td>
@@ -36,7 +36,7 @@
 </table>
 <table>
   <tr>
-    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200815226-21c66d01-4782-445c-82c4-af31bffba9ea.png" width="800" height="400" align='center'></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200835028-ac371016-6241-46f4-a39f-429eace672b6.png" width="800" height="400" align='center'></td>
   </tr>
 </table>
 <br>
@@ -48,13 +48,12 @@
 - (5) D플립플롭으로 정의한 여기표&전이표
 - (6) D플립플롭 카르노맵
 
-Da = ~XQa+~QbQa+~QaQbX &nbsp; Db = ~XQb+~QbX
+Da = ~XQa+~QbQa+~QaQbX &nbsp;&nbsp;&nbsp; Db = ~XQb+~QbX
 
 <br>
 
-
+<hr>
 # 2. Counter 설계
-
 <table>
   <tr>
     <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200815213-15b68e86-b625-4652-b477-178d7e08f42d.png" width="800" height="400" align='center'></td>
@@ -81,15 +80,17 @@ Da = ~XQa+~QbQa+~QaQbX &nbsp; Db = ~XQb+~QbX
 - (2) JK플립플롭 여기표&전이표
 - (3), (4) JK플립플롭 카르노맵
 
-Ja=BCD  &nbsp;  Jb=CD     &nbsp;   Jc=D        &nbsp;   Jd=1
-Ka=0    &nbsp;  Kb=~ACD   &nbsp;   Kc=~BD+~AD  &nbsp;   Kd=~A+~B+~D
+Ja=BCD  &nbsp;&nbsp;  Jb=CD     &nbsp;&nbsp;   Jc=D        &nbsp;&nbsp;   Jd=1        <br>
+Ka=0    &nbsp;&nbsp;  Kb=~ACD   &nbsp;&nbsp;   Kc=~BD+~AD  &nbsp;&nbsp;   Kd=~A+~B+~D
   
 <br>
   
+<hr>
 # 3. 스위치 연결
 - 방금 만들어본 Mod-16 Counter는 JK플립플롭의 출력이 1111의 결과가 나오면 그 즉시 Reset을 시키는 형식으로 구성되어 있어서 모든 신호등의 불이 한 주기를 완료했을 때  다시 처음으로 돌아가서 반복시키는 역할을 한다. 그리고 추가적인 조건이 있는데 EW도로에 차량이 없으면 NS도로에 녹색불과 EW도로에 적색불이 계속해서 켜진다는 것이다. 그 말은 즉, 신호등의 불을 다시 Reset시킬 필요없이 계속 그 상태를 유지하면 된다는 뜻이다. 결국에는 JK플립플롭 각 결과값을 받아 초기화 시킬 수 있는 A·B·C·D에 도로에 차량이 있는지를 판별하는 스위치를 연결하면 된다.
 -  ~(ABCD * EW)
 
+<hr>
 # 4. JK플립플롭 Counter와 D플립플롭 연결
 <table>
   <tr>
@@ -109,6 +110,7 @@ Ka=0    &nbsp;  Kb=~ACD   &nbsp;   Kc=~BD+~AD  &nbsp;   Kd=~A+~B+~D
 
 <br>
 
+<hr>
 # 5. LogicWorks
 <table>
   <tr>
