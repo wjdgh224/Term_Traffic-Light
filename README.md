@@ -10,8 +10,11 @@
   <tr>
     <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200814293-4da81231-4513-4591-a918-fe1c6d9d6d25.png" width="800" height="400" align='center'></td>
   </tr>
+  <tr>
+    <td>- 주어진 문제에 대한 상태도 </td>
+  </tr>
 </table>
-- 주어진 문제에 대한 상태도 
+
 <img width="100%" src="https://user-images.githubusercontent.com/78483046/200814415-cb7e5dcd-a57a-4c43-971b-f01b1f271692.png"/>
 - 무어머신으로 작성한 상태 다이어 그램
 <img width="100%" src="https://user-images.githubusercontent.com/78483046/200814426-c8f831c4-27cf-4e4d-9e82-37662157e81d.png"/>
@@ -23,6 +26,7 @@
 <img width="100%" src="https://user-images.githubusercontent.com/78483046/200815226-21c66d01-4782-445c-82c4-af31bffba9ea.png"/>
 - D플립플롭 카르노맵
 - Da = ~XQa+~QbQa+~QaQbX     Db = ~XQb+~QbX
+
 # 2. Counter 설계
 <img width="100%" src="https://user-images.githubusercontent.com/78483046/200815213-15b68e86-b625-4652-b477-178d7e08f42d.png"/>
 - Mod16 카운터 전이표
