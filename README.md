@@ -10,7 +10,7 @@
 # 1. 신호 변경
 <table>
   <tr>
-    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200814293-4da81231-4513-4591-a918-fe1c6d9d6d25.png" width="800" height="400" align='center'></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200814293-4da81231-4513-4591-a918-fe1c6d9d6d25.png" width="800" height="250" align='center'></td>
   </tr>
 </table>
 
@@ -22,28 +22,28 @@
 </table>
 <table>
   <tr>
-    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200814426-c8f831c4-27cf-4e4d-9e82-37662157e81d.png" width="800" height="400" align='center'></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200814426-c8f831c4-27cf-4e4d-9e82-37662157e81d.png" width="800" height="300" align='center'></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200814424-90bf30c0-0da2-4654-a6b4-b30e942729be.png" width="800" height="400" align='center'></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200814424-90bf30c0-0da2-4654-a6b4-b30e942729be.png" width="800" height="300" align='center'></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200815222-68891b1d-cfac-4ebf-97ae-65c833ab3e6f.png" width="800" height="400" align='center'></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200815222-68891b1d-cfac-4ebf-97ae-65c833ab3e6f.png" width="800" height="300" align='center'></td>
   </tr>
 </table>
 <table>
   <tr>
-    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200835028-ac371016-6241-46f4-a39f-429eace672b6.png" width="800" height="400" align='center'></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200835028-ac371016-6241-46f4-a39f-429eace672b6.png" width="800" height="300" align='center'></td>
   </tr>
 </table>
 <br>
 
-- (1) 주어진 문제에 대한 상태도
-- (2) 무어머신으로 작성한 상태 다이어 그램
+- (1) 주어진 문제에 대한 상태도 : 각 시간에 대해서 4가지 상태
+- (2) 무어머신으로 작성한 상태 다이어그램 : S0~S3의 상태
 - (3) 다음 상태에 대한 전이표 정의
 - (4) 각 상태에 비트 할당
 - (5) D플립플롭으로 정의한 여기표&전이표
@@ -90,7 +90,7 @@ Ka=0    &nbsp;&nbsp;  Kb=~ACD   &nbsp;&nbsp;   Kc=~BD+~AD  &nbsp;&nbsp;   Kd=~A+
 <hr>
 
 # 3. 스위치 연결
-- 방금 만들어본 Mod-16 Counter는 JK플립플롭의 출력이 1111의 결과가 나오면 그 즉시 Reset을 시키는 형식으로 구성되어 있어서 모든 신호등의 불이 한 주기를 완료했을 때  다시 처음으로 돌아가서 반복시키는 역할을 한다. 그리고 추가적인 조건이 있는데 EW도로에 차량이 없으면 NS도로에 녹색불과 EW도로에 적색불이 계속해서 켜진다는 것이다. 그 말은 즉, 신호등의 불을 다시 Reset시킬 필요없이 계속 그 상태를 유지하면 된다는 뜻이다. 결국에는 JK플립플롭 각 결과값을 받아 초기화 시킬 수 있는 A·B·C·D에 도로에 차량이 있는지를 판별하는 스위치를 연결하면 된다.
+- Mod16 카운터는 JK플립플롭의 출력이 1111의 결과가 나오면 그 즉시 Reset을 시키는 형식으로 구성되어 있어서 모든 신호등의 불이 한 주기를 완료했을 때  다시 처음으로 돌아가서 반복시키는 역할을 한다. 그리고 추가적인 조건이 있는데 EW도로에 차량이 없으면 NS도로에 녹색불과 EW도로에 적색불이 계속해서 켜진다는 것이다. 그 말은 즉, 신호등의 불을 다시 Reset시킬 필요없이 계속 그 상태를 유지하면 된다는 뜻이다. 결국에는 JK플립플롭 각 결과값을 받아 초기화 시킬 수 있는 A·B·C·D에 도로에 차량이 있는지를 판별하는 스위치를 연결하면 된다.
 -  ~(ABCD * EW)
 
 <hr>
@@ -110,7 +110,9 @@ Ka=0    &nbsp;&nbsp;  Kb=~ACD   &nbsp;&nbsp;   Kc=~BD+~AD  &nbsp;&nbsp;   Kd=~A+
 
 - (1) Mod16 카운터 전이표에서 7, 9, 13, 15초 일때 변화
 
-- (2) 최종 카르노맵 : X=~(CD)A+~DBC
+- (2) 최종 카르노맵 : X는 D플립플롭 회로로 전달
+
+X=~(CD)A+~DBC
 
 <br>
 
@@ -144,7 +146,7 @@ Ka=0    &nbsp;&nbsp;  Kb=~ACD   &nbsp;&nbsp;   Kc=~BD+~AD  &nbsp;&nbsp;   Kd=~A+
   </tr>
 </table>
 
-- (1)~(4) 회로도와 출력 결과
+- (1)~(4) 회로도와 출력 결과 : EW존재 -> NS, EW 주기적으로 변경 / EW없음 -> NS, EW유지
 - (5) tinkercad로 구현
 
 
