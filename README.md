@@ -47,7 +47,8 @@
 - (4) 각 상태에 비트 할당
 - (5) D플립플롭으로 정의한 여기표&전이표
 - (6) D플립플롭 카르노맵
-Da = ~XQa+~QbQa+~QaQbX&nbspDb = ~XQb+~QbX
+
+Da = ~XQa+~QbQa+~QaQbX &nbsp; Db = ~XQb+~QbX
 
 <br>
 
@@ -79,8 +80,9 @@ Da = ~XQa+~QbQa+~QaQbX&nbspDb = ~XQb+~QbX
 - (1) Mod16 카운터 전이표
 - (2) JK플립플롭 여기표&전이표
 - (3), (4) JK플립플롭 카르노맵
-Ja=BCD  &nbsp  Jb=CD     &nbsp   Jc=D        &nbsp   Jd=1
-Ka=0    &nbsp  Kb=~ACD   &nbsp   Kc=~BD+~AD  &nbsp   Kd=~A+~B+~D
+
+Ja=BCD  &nbsp;  Jb=CD     &nbsp;   Jc=D        &nbsp;   Jd=1
+Ka=0    &nbsp;  Kb=~ACD   &nbsp;   Kc=~BD+~AD  &nbsp;   Kd=~A+~B+~D
   
 <br>
   
@@ -131,7 +133,7 @@ Ka=0    &nbsp  Kb=~ACD   &nbsp   Kc=~BD+~AD  &nbsp   Kd=~A+~B+~D
 
 <table>
   <tr>
-    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200825625-73685a55-c9ef-411b-bd7a-3ada1f95e13e.png" width="800" height="400" align='center'></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200834667-3d0c311d-f2f6-4171-bdfb-9454c65144a7.png" width="800" height="400" align='center'></td>
   </tr>
 </table>
 
