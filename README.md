@@ -6,7 +6,11 @@
 (2) EW도로의 양쪽 어디에서든지 차량이 들어오면 그때는 신호가 바뀐다. 그리고 NS도로나 EW도로에 차량이 있으면 신호가 계속 바뀌어야 한다. NS 녹색 신호등은 7초 동안 진행되며, 2초간 황색 신호를 준 후 적색 신호로 바뀐다. EW 녹색 신호등은 4초 동안 지속된 후 2초간 황색 신호를 준 후 적색으로 바뀐다. 이것은 NS와 EW방향 모두에 차량이 있을 경우이다.
 
 # 1. 신호 변경
-<img width="100%" src="https://user-images.githubusercontent.com/78483046/200814293-4da81231-4513-4591-a918-fe1c6d9d6d25.png"/>
+<table>
+  <tr>
+    <td align="center"><img src="https://user-images.githubusercontent.com/78483046/200814293-4da81231-4513-4591-a918-fe1c6d9d6d25.png" width="800" height="400" align='center'></td>
+  </tr>
+</table>
 - 주어진 문제에 대한 상태도 
 <img width="100%" src="https://user-images.githubusercontent.com/78483046/200814415-cb7e5dcd-a57a-4c43-971b-f01b1f271692.png"/>
 - 무어머신으로 작성한 상태 다이어 그램
